@@ -1,12 +1,16 @@
-# AWS Lambda Empty Function Project
+# Aws S3 Lambda Messaging Function Project
 
 This starter project consists of:
-* Function.cs - class file containing a class with a single function handler method
-* aws-lambda-tools-defaults.json - default argument settings for use with Visual Studio and command line deployment tools for AWS
+* Function.cs - class file containing a class with a listener of AWS S3 bucket events
+* aws-lambda-tools-defaults.json - custom argument settings for use with Visual Studio and command line deployment tools for AWS
 
-You may also have a test project depending on the options selected.
+The generated function handler responds to events on an Amazon S3 bucket. The handler receives the bucket and object key details in an S3Event instance and returns the content type of the object as the function output. Replace the body of this method, and parameters, to suit your needs.
 
-The generated function handler is a simple method accepting a string argument that returns the uppercase equivalent of the input string. Replace the body of this method, and parameters, to suit your needs. 
+After deploying your function you must configure an Amazon S3 bucket as an event source to trigger your Lambda function.
+
+The sample of from AWS portal:
+![image](https://github.com/user-attachments/assets/4c38a520-34a0-4b05-afec-e81e6a967a25)
+
 
 ## Here are some steps to follow from Visual Studio:
 
@@ -38,7 +42,7 @@ If already installed check if new version is available.
 
 Execute unit tests
 ```
-    cd "AwsS3LambdaMessagingConnector/test/AwsS3LambdaMessagingConnector.Tests"
+    cd "AwsS3LambdaMessagingConnector/test/KafkaS3ConnectAWSLambda.Tests"
     dotnet test
 ```
 

@@ -9,6 +9,7 @@ The generated function handler responds to events on an Amazon S3 bucket. The ha
 After deploying your function you must configure an Amazon S3 bucket as an event source to trigger your Lambda function.
 
 The sample of from AWS portal:
+
 ![image](https://github.com/user-attachments/assets/4c38a520-34a0-4b05-afec-e81e6a967a25)
 
 
@@ -51,3 +52,8 @@ Deploy function to AWS Lambda
     cd "AwsS3LambdaMessagingConnector/src/AwsS3LambdaMessagingConnector"
     dotnet lambda deploy-function
 ```
+
+## Here are some steps to follow to get it worked from S3 buket and Confluent Topic consumer:
+
+![image](https://github.com/user-attachments/assets/788b9754-8eb8-403e-ba9f-0706839d586a)
+

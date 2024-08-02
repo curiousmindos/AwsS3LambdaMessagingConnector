@@ -55,5 +55,11 @@ Deploy function to AWS Lambda
 
 ## Here are some steps to follow to get it worked from S3 buket and Confluent Topic consumer:
 
+To upload files into watching bucket using ether VS Aws tool or Amazon AWS S3 explorer:
+
+![image](https://github.com/user-attachments/assets/45c81390-a60b-48d0-b757-58eb5d43511a)
+
+nad to watch coming messages into Kafka topics
+
 ![image](https://github.com/user-attachments/assets/788b9754-8eb8-403e-ba9f-0706839d586a)
 

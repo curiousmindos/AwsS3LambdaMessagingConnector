@@ -1,7 +1,8 @@
 # Aws S3 Lambda Messaging Function Project
 
-This starter project consists of:
+This project consists of:
 * Function.cs - class file containing a class with a listener of AWS S3 bucket events
+* Services folder with injected Kafka publisher service
 * aws-lambda-tools-defaults.json - custom argument settings for use with Visual Studio and command line deployment tools for AWS
 
 The generated function handler responds to events on an Amazon S3 bucket. The handler receives the bucket and object key details in an S3Event instance and returns the content type of the object as the function output. Replace the body of this method, and parameters, to suit your needs.
